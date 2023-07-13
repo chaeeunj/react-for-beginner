@@ -1,17 +1,15 @@
-import React, { useEffect, useState } from 'react';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './routes/Home';
 import Detail from './routes/Detail';
-import Movie from './components/Movie';
 
 function App() {
   return (
-    <BrowserRouter>
+    <Router>
       <Routes>
-        <Route path="/movie/:id" element={<Detail />} />
-        <Route path="/" element={<Home />} />
+        <Route path="/react-for-beginner" element={<Home />} />
+        <Route path="/react-for-beginner/movie" element={<Detail />} />
       </Routes>
-    </BrowserRouter>
+    </Router>
   );
 }
 
