@@ -2,12 +2,12 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 
-function Movie({ coverImage, title, summary, genres }) {
+function Movie({ id, coverImg, title, summary, genres }) {
   return (
     <div>
-      <img src={coverImage} alt={title} />
+      <img src={coverImg} alt={title} />
       <h2>
-        <Link to="/react-for-beginner/movie">{title}</Link>
+        <Link to={`/react-for-beginner/movie/${id}`}>{title}</Link>
       </h2>
       <p>{summary}</p>
       <ul>

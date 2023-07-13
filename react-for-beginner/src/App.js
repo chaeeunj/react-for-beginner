@@ -7,7 +7,7 @@ function App() {
     <Router>
       <Routes>
         <Route path="/react-for-beginner" element={<Home />} />
-        <Route path="/react-for-beginner/movie" element={<Detail />} />
+        <Route path="/react-for-beginner/movie/:id" element={<Detail />} />
       </Routes>
     </Router>
   );
